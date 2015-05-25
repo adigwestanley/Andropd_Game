@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="25dp"/>
+
+    <ScrollView
+            android:layout_width="fill_parent"
+       		android:layout_height="0dp"
+        	android:layout_weight="0.75" >
+        
+    	<LinearLayout
+    	    android:id="@+id/layout_level_select"
+       		android:layout_width="fill_parent"
+       		android:layout_height="wrap_content"
+        	android:baselineAligned="false"
+        	android:orientation="vertical"
+        	android:padding="5dp" />
+     
+     </ScrollView>			
+     			
+    <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="0dp"
+         android:layout_weight="0.25">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/oddtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Odd Even"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+
+    	    <ImageButton
+            	android:id="@+id/odd_button"
+            	android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/oddtext"
+            	android:layout_marginRight="5dp"
+            	android:layout_marginTop="10dp"
+            	android:src="@drawable/d1"
+            	android:background="@null"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/wordtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Words"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageButton
+                    android:id="@+id/word_button"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/wordtext"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/d2"
+                    android:background="@null"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/multtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Multiples"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+
+             <ImageButton
+                 android:id="@+id/multiple_button"
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:layout_below="@id/multtext"
+                 android:layout_marginRight="5dp"
+                 android:layout_marginTop="10dp"
+                 android:src="@drawable/d3"
+                 android:background="@null"/>
+
+        </RelativeLayout>
+     </LinearLayout>
+     
+   
+</LinearLayout>
